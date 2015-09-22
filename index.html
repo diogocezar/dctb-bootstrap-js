@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BoostStrap JS</title>
+</head>
+<body style="display:none">
+	<h1>BootStrap JS</h1>
+</body>
+<script src="js/bootstrap.js"></script>
+<script>
+	var data = [
+		'css/style.css',
+		'js/libs/Alert.js',
+		'js/libs/Console.js'
+	];
+	var actions = function(){
+		Alert.show('foo');
+		Console.log('bar');
+	}
+	Bootstrap.init(data, actions);
+</script>
+</html>
